@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="menu">
       <header className="title">
-        <h1>Menu</h1>
+        <h1> Our Menu</h1>
         <div className="underline"></div>
       </header>
       <Categories handleCategory={handleCategory} />

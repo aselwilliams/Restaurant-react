@@ -6,7 +6,7 @@ body {
 .menu {
   width: 100vw;
   height: auto;
-  margin: 30px 60px;
+  margin: 30px;
 }
 
 .title {
@@ -28,7 +28,7 @@ body {
   gap: 40px 0px;
   width: 100vw;
   text-align: center;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .photo {
