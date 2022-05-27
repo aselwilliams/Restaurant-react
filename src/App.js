@@ -23,10 +23,13 @@ if(action==='all') {
 }
 }
   return (
-    <div className="App">
-      <div className='nav'>
+    <div className="menu">
+      
+        
+        <header className='title'>
         <h1>Menu</h1>
         <div className='underline'></div>
+        </header>
         <div className='btn-container'>
           <button onClick={()=>handleCategory('all')} className='filter-btn'>All</button>
           <button onClick={()=>handleCategory('breakfast')} className='filter-btn'>Breakfast</button>
@@ -35,10 +38,9 @@ if(action==='all') {
           <button onClick={()=>handleCategory('dinner')} className='filter-btn'>Dinner</button>
         </div>
       
-      </div>
-      <main className='menu'>
+     
         <Menu menuList={menuList} filteredMenu={filteredMenu} />
-      </main>
+    
     </div>
   );
 }

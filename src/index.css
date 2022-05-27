@@ -4,36 +4,39 @@ body {
 }
 
 .menu {
-    width:90vw;
+    width:100vw;
     height: auto;
-    margin-left:140px;
+    margin:30px 60px;
+  
 }
 
 .title {
   text-align:center;
+  font-size: large;
+  color:rgb(3, 3, 61)
 }
 
 .underline {
   margin:auto;
   border-top: solid 3px #c59d55;
-  width:100px;
+  width:80px;
   margin-bottom:15px;
 }
 
 .item-location {
   display:grid;
   grid-template-columns:repeat(2,1fr);
-  gap:50px;
-  width:1200px;
+  gap:40px 0px;
+  width:100vw;
   text-align:center;
-  margin: 0 auto;
+  margin-left: 50px;
 }
 
 .photo {
   width:300px;
   height:220px;
   border:#c59d55 3px solid;
-  border-radius: 15px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
@@ -55,6 +58,7 @@ body {
 .item-info {
   width:300px;
   margin-left:8px;
+  color:rgb(3, 3, 61);
 }
 
 .price {
@@ -72,14 +76,32 @@ body {
   color:#c59d55;
   padding:10px;
   border-radius:8px;
-  margin:5px; 
+  margin:10px; 
+  font-size: 18px;
 }
 
 .filter-btn:hover {
   color:white;
   background:#c59d55;
 }
-.App{
-  margin:0 auto;
-  width: 100vw;
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    display: flex;
+    max-width: 40rem;
+  }
+
+  .photo {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .item-location {
+    width: 95vw;
+    grid-template-columns: repeat(2 1fr);
+  }
+
+  .photo {
+    height: 175px;
+  }
 }
