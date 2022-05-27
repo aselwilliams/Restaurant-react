@@ -1,7 +1,8 @@
 import data from './data'
 import './App.css';
 import {useState,useEffect} from 'react';
-import Menu from './components/Menu'
+import Menu from './components/Menu';
+import Categories from './components/Categories';
 
 function App() {
 const [menuList, setMenuList] =useState(data)
@@ -24,21 +25,11 @@ if(action==='all') {
 }
   return (
     <div className="menu">
-      
-        
         <header className='title'>
         <h1>Menu</h1>
         <div className='underline'></div>
         </header>
-        <div className='btn-container'>
-          <button onClick={()=>handleCategory('all')} className='filter-btn'>All</button>
-          <button onClick={()=>handleCategory('breakfast')} className='filter-btn'>Breakfast</button>
-          <button onClick={()=>handleCategory('lunch')} className='filter-btn'>Lunch</button>
-          <button onClick={()=>handleCategory('shakes')} className='filter-btn'>Shakes</button>
-          <button onClick={()=>handleCategory('dinner')} className='filter-btn'>Dinner</button>
-        </div>
-      
-     
+        <Categories handleCategory={handleCategory} />
         <Menu menuList={menuList} filteredMenu={filteredMenu} />
     
     </div>
