@@ -1,88 +1,87 @@
 body {
-  background:whitesmoke;
-  font-family:Arial;
+  background: whitesmoke;
+  font-family: Arial;
 }
 
 .menu {
-    width:100vw;
-    height: auto;
-    margin:30px 60px;
-  
+  width: 100vw;
+  height: auto;
+  margin: 30px 60px;
 }
 
 .title {
-  text-align:center;
+  text-align: center;
   font-size: large;
-  color:rgb(3, 3, 61)
+  color: rgb(3, 3, 61);
 }
 
 .underline {
-  margin:auto;
+  margin: auto;
   border-top: solid 3px #c59d55;
-  width:80px;
-  margin-bottom:15px;
+  width: 80px;
+  margin-bottom: 15px;
 }
 
 .item-location {
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:40px 0px;
-  width:100vw;
-  text-align:center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 0px;
+  width: 100vw;
+  text-align: center;
   margin-left: 50px;
 }
 
 .photo {
-  width:300px;
-  height:220px;
-  border:#c59d55 3px solid;
+  width: 300px;
+  height: 220px;
+  border: #c59d55 3px solid;
   border-radius: 10px;
   object-fit: cover;
 }
 
 .menu-item {
-  width:310px;
-  display:grid;
+  width: 310px;
+  display: grid;
   gap: 0 20px;
 }
 
 .item-header {
-  width:300px;
-  display:flex;
+  width: 300px;
+  display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   text-transform: capitalize;
   border-bottom: 2px dotted #333;
 }
 
 .item-info {
-  width:300px;
-  margin-left:8px;
-  color:rgb(3, 3, 61);
+  width: 300px;
+  margin-left: 8px;
+  color: rgb(3, 3, 61);
 }
 
 .price {
-  color:#c59d55;
+  color: #c59d55;
 }
 
 .btn-container {
-  text-align:center;
-  margin:30px;
+  text-align: center;
+  margin: 30px;
 }
 
 .filter-btn {
-  border:2px solid #c59d55;
-  background:transparent;
-  color:#c59d55;
-  padding:10px;
-  border-radius:8px;
-  margin:10px; 
+  border: 2px solid #c59d55;
+  background: transparent;
+  color: #c59d55;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
   font-size: 18px;
 }
 
 .filter-btn:hover {
-  color:white;
-  background:#c59d55;
+  color: white;
+  background: #c59d55;
 }
 
 @media screen and (min-width: 768px) {
